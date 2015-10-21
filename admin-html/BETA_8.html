@@ -17,7 +17,7 @@ td{padding: 2px;}
 	margin:0px;padding:0px;
 	width:100%;
 	box-shadow: 10px 10px 5px #888888;
-	border:1px solid #bf5f00;
+	border:1px solid #3f7f00;
 	
 	-moz-border-radius-bottomleft:13px;
 	-webkit-border-bottom-left-radius:13px;
@@ -61,18 +61,18 @@ td{padding: 2px;}
 }.CSSTableGenerator tr:hover td{
 	
 }
-.CSSTableGenerator tr:nth-child(odd){ background-color:#ffd4aa; }
+.CSSTableGenerator tr:nth-child(odd){ background-color:#d4ffaa; }
 .CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
 	vertical-align:middle;
 	
 	
-	border:1px solid #bf5f00;
+	border:1px solid #3f7f00;
 	border-width:0px 1px 1px 0px;
-	text-align:left;
-	padding:7px;
-	font-size:10px;
-	font-family:Arial;
-	font-weight:bold;
+	text-align:center;
+	padding:16px;
+	font-size:13px;
+	font-family:Trebuchet MS;
+	font-weight:normal;
 	color:#000000;
 }.CSSTableGenerator tr:last-child td{
 	border-width:0px 1px 0px 0px;
@@ -82,25 +82,25 @@ td{padding: 2px;}
 	border-width:0px 0px 0px 0px;
 }
 .CSSTableGenerator tr:first-child td{
-		background:-o-linear-gradient(bottom, #ff7f00 5%, #ff7f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #ff7f00) );
-	background:-moz-linear-gradient( center top, #ff7f00 5%, #ff7f00 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#ff7f00");	background: -o-linear-gradient(top,#ff7f00,ff7f00);
+		background:-o-linear-gradient(bottom, #5fbf00 5%, #5fbf00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #5fbf00) );
+	background:-moz-linear-gradient( center top, #5fbf00 5%, #5fbf00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbf00", endColorstr="#5fbf00");	background: -o-linear-gradient(top,#5fbf00,5fbf00);
 
-	background-color:#ff7f00;
-	border:0px solid #bf5f00;
+	background-color:#5fbf00;
+	border:0px solid #3f7f00;
 	text-align:center;
 	border-width:0px 0px 1px 1px;
-	font-size:14px;
-	font-family:Arial;
+	font-size:22px;
+	font-family:Trebuchet MS;
 	font-weight:bold;
-	color:#ffffff;
+	color:#0000bf;
 }
 .CSSTableGenerator tr:first-child:hover td{
-	background:-o-linear-gradient(bottom, #ff7f00 5%, #ff7f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #ff7f00) );
-	background:-moz-linear-gradient( center top, #ff7f00 5%, #ff7f00 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#ff7f00");	background: -o-linear-gradient(top,#ff7f00,ff7f00);
+	background:-o-linear-gradient(bottom, #5fbf00 5%, #5fbf00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #5fbf00) );
+	background:-moz-linear-gradient( center top, #5fbf00 5%, #5fbf00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbf00", endColorstr="#5fbf00");	background: -o-linear-gradient(top,#5fbf00,5fbf00);
 
-	background-color:#ff7f00;
+	background-color:#5fbf00;
 }
 .CSSTableGenerator tr:first-child td:first-child{
 	border-width:0px 0px 1px 0px;
@@ -120,10 +120,10 @@ td{padding: 2px;}
         <table border="1" id="table1" >
             <tr>
                 <th class="testClass" style="display:none"></th>
-                <th col="product" class="testClass">Product</th>
-                <th col="price" summary="max" class="testClass">Price</th>
-                <th col="quantity" summary="avg" class="testClass">Quantity</th>
-                <th col="discount" class="testClass">Discount</th>
+                <th col="product" class="testClass">Column Type</th>
+                <th col="price" summary="max" class="testClass">Column Name</th>
+                <th col="quantity" summary="avg" class="testClass">Expected Entries</th>
+                <th col="discount" class="testClass">Required</th>
                 <th class="testClass" style="display:none"></th>
                 <th col="subtotal" formula="price*quantity*(1 - 0.10 * discount)" summary="sum" class="testClass">Subtotal</th>
             </tr>
@@ -131,16 +131,16 @@ td{padding: 2px;}
                 <td style="display:none"></td>
                 <td>
                     <select name="det[0][item]" >
-                        <option value="1">Computer</option>
-                        <option value="2">Iphone</option>
-                        <option value="3">Mouse</option>
-                        <option value="4">Keyboard</option>
-                        <option value="5">Screen</option>
-                        <option value="6">USB Memmory</option>
-                        <option value="7">CD Burner</option>
-                        <option value="8">Hard Drive</option>
-                        <option value="9">Motherboard</option>
-                        <option value="10">Case</option>
+                        <option value="1">Text</option>
+                        <option value="2">Number</option>
+                        <option value="3">Email</option>
+                        <option value="4">Phone</option>
+                        <option value="5">Address</option>
+                        <option value="6">File</option>
+                        <option value="7">Media</option>
+                        <option value="8">Link</option>
+                        <option value="9">Dollars</option>
+                        <option value="10">Image</option>
                     </select>
                 </td>
                 <td>
