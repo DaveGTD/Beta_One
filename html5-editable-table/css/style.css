@@ -31,3 +31,6 @@
 .table-add:hover {
   color: #0b0;
 }
+body {
+	background-color: rgb(235, 235, 255);
+}
