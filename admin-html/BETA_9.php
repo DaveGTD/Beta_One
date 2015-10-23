@@ -35,11 +35,10 @@
 			 	 }
 			 }
 			
-			
-			echo "< table >";
+
 			$fieldarray = array('row_num', 'id', 'name', 'title', 'salary', 'start_date', 'x', 'y');
 			maketable("SELECT * FROM employees", $fieldarray);
-			echo "< /table >";
+	
 		?>
 		
 	</body>
