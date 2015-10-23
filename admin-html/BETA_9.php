@@ -18,7 +18,8 @@
 				 	die("Connection failed: " . mysqli_connect_error());
 				 }
 				 
-				 $itemnum = mysql_num_rows($result);
+				 $result = mysqli_query($conn, $query);
+				 $itemnum = mysqli_num_rows($result);
 				 if($itemnum > 0)
 				 { 
 						do
@@ -30,7 +31,7 @@
 			   				 }
 			   				 echo "< /tr >" ;
 			  			}
-			  			while($items = mysql_fetch_assoc($result));
+			  			while($items = mysqli_fetch_assoc($result));
 			 	 }
 			 }
 			
