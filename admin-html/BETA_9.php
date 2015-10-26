@@ -2,6 +2,8 @@
 	<head>
 		<title>RESULT VIEWER</title>
 
+	<style>
+		
 .CSSTableGenerator {
 	margin:0px;padding:0px;
 	width:100%;
@@ -97,6 +99,9 @@
 	border-width:0px 0px 1px 1px;
 }
 
+		
+	</style>
+	
 	</head>
 	
 <body>
