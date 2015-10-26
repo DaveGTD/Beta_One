@@ -59,7 +59,7 @@
 	border:1px solid #000000;
 	border-width:0px 1px 1px 0px;
 	text-align:center;
-	padding:15px;
+	padding:8px;
 	font-size:10px;
 	font-family:Arial;
 	font-weight:normal;
