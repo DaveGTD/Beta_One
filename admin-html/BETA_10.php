@@ -76,12 +76,25 @@ $fields_num = mysql_num_fields($result);
 
 
 // printing table headers
+echo "<thead><tr>";
 for($i=0; $i<$fields_num; $i++)
 {
     $field = mysql_fetch_field($result);
-    echo "<td>{$field->name}</td>";
+    echo "<th>{$field->name}</th>";
 }
-echo "</tr>\n";
+echo "</tr></thead>";
+
+echo "<tfoot><tr>";
+for($i=0; $i<$fields_num; $i++)
+{
+    $field = mysql_fetch_field($result);
+    echo "<th>{$field->name}</th>";
+}
+echo "</tr></tfoot>";
+
+
+
+echo "<tbody>";
 // printing table rows
 while($row = mysql_fetch_row($result))
 {
@@ -94,6 +107,8 @@ while($row = mysql_fetch_row($result))
 
     echo "</tr>\n";
 }
+echo "</tbody>";
+
 mysql_free_result($result);
 ?>
                                         
