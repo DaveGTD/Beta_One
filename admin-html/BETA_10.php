@@ -74,8 +74,7 @@ if (!$result) {
 
 $fields_num = mysql_num_fields($result);
 
-echo "<h1>Table: {$table}</h1>";
-echo "<table border='1'><tr>";
+
 // printing table headers
 for($i=0; $i<$fields_num; $i++)
 {
