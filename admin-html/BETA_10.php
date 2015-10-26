@@ -84,6 +84,7 @@ for($i=0; $i<$fields_num; $i++)
 }
 echo "</tr></thead>";
 
+/*
 echo "<tfoot><tr>";
 for($i=0; $i<$fields_num; $i++)
 {
@@ -91,6 +92,7 @@ for($i=0; $i<$fields_num; $i++)
     echo "<th>{$field->name}</th>";
 }
 echo "</tr></tfoot>";
+*/
 
 
 
