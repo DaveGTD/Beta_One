@@ -67,7 +67,7 @@ if (!mysql_select_db($database))
     die("Can't select database");
 
 // sending query
-$result = mysql_query("SELECT * FROM {$table}");
+$result = mysql_query("SELECT * FROM {$table} WHERE R>150");
 if (!$result) {
     die("Query to show fields from table failed");
 }
