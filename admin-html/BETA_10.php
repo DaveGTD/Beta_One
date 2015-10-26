@@ -47,7 +47,7 @@
                                 <div class="panel panel-default plain toggle panelMove panelClose panelRefresh">
                                     <!-- Start .panel -->
                                     <div class="panel-heading">
-                                        <h4 class="panel-title">TABLE: Employees</h4>
+                                        <h4 class="panel-title">REPORT: Employees</h4>
                                     </div>
                                     <div class="panel-body">
                                         <table id="basic-datatables" class="table table-striped table-bordered" cellspacing="0" width="100%">
