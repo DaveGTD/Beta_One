@@ -85,6 +85,13 @@ for($i=0; $i<$fields_num; $i++)
 echo "</tr></thead>";
 
 /*
+	
+	
+	This is just some random text
+	
+	
+	
+	
 echo "<tfoot><tr>";
 for($i=0; $i<$fields_num; $i++)
 {
