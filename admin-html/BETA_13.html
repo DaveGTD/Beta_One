@@ -6,7 +6,7 @@
 	
 <body>
 	
-	<button type="button" onclick="myFunction()">Click Me!</button>
+
 	<form method="post" action="BETA_14.php">
 		<table id="myTable" >
 			<!-- Table row display elements -->
@@ -35,7 +35,7 @@
 			<input type="hidden" name="hiddenName" value="your value"/>
   		</table>
   		
-  		<input type="submit" value="Submit"/>
+  		<input type="submit" value="Submit" onclick="myFunction()"/>
 	</form>
 
 
@@ -61,7 +61,15 @@
 			data.push(rowData); 
 		}
 		 
-		console.log(JSON.stringify(data));
+		// console.log(JSON.stringify(data));
+		
+		$.ajax({
+			    type: 'POST',
+			    url: 'BETA_14.php',
+			    data: {json: JSON.stringify(data)},
+			    dataType: 'json'
+				});
+		
 	}
     	
 	</script>
