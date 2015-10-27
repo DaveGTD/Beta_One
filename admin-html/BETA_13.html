@@ -33,7 +33,7 @@
 		
 	function myFunction()
 	{
-		var table = getElementById('myTable');
+		var table = document.getElementById('myTable');
 		var data = []; // first row needs to be headers var headers = []; 
 		for (var i=0; i<table.rows[0].cells.length; i++) {
 		 headers[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi,''); 
