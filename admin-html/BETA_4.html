@@ -180,10 +180,11 @@
 								// go through cells 
 								for(var i=1; i<table.rows.length; i++) 
 								{ 
-									var tableRow = table.rows[i]; var rowData = {}; 
+									var tableRow = table.rows[i]; 
+									var rowData = {}; 
 									for(var j=0; j<tableRow.cells.length; j++) 
 									{ 
-										rowData[ headers[j] ] = tableRow.cells[j].innerHTML.value; 
+										rowData[ headers[j] ] = tableRow.cells[j].value; 
 									} 
 									data.push(rowData); 
 								}
