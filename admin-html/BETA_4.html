@@ -46,7 +46,7 @@
                                     
                                     
                                     <div class="panel-body pt0 pb0">
-                                        <form class="form-horizontal group-border stripped" role="form" action="BETA_3.php" method="post">
+                                        <form class="form-horizontal group-border stripped" role="form" action="#" method="post">
                                             <div class="form-group">
 	                                            
 	                                            
@@ -184,7 +184,9 @@
 									var rowData = {}; 
 									for(var j=0; j<tableRow.cells.length; j++) 
 									{ 
-										rowData[ headers[j] ] = tableRow.cells[j].value; 
+										rowData[ headers[j] ] = tableRow.cells[j].innerHTML; 
+										var x = rowData[headers[j]];
+										console.log(x);
 									} 
 									data.push(rowData); 
 								}
