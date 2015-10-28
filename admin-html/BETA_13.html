@@ -35,44 +35,13 @@
 			<input type="hidden" id="myID" name="json" value=""/>
   		</table>
   		
-  		<input type="submit" value="Submit" onclick="myFunction2()"/>
+  		<input type="submit" value="Submit" onclick="myFunction()"/>
 	</form>
 
 
 	<script>
 		
 	function myFunction()
-	{
-		var table = document.getElementById('myTable');
-		var data = []; // first row needs to be headers var headers = []; 
-		var headers = [];
-		for(var i=0; i<table.rows[0].cells.length; i++) 
-		{
-			 headers[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi,''); 
-		} 
-		// go through cells 
-		for(var i=1; i<table.rows.length; i++) 
-		{ 
-			var tableRow = table.rows[i]; var rowData = {}; 
-			for(var j=0; j<tableRow.cells.length; j++) 
-			{ 
-				rowData[ headers[j] ] = tableRow.cells[j].innerHTML; 
-			} 
-			data.push(rowData); 
-		}
-		 
-		// console.log(JSON.stringify(data));
-		
-		$.ajax({
-			    type: 'POST',
-			    url: 'BETA_14.php',
-			    data: JSON.stringify(data),
-			    dataType: 'json'
-				});
-
-	}
-	
-	function myFunction2()
 	{
 		var table = document.getElementById('myTable');
 		var data = []; // first row needs to be headers var headers = []; 

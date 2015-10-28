@@ -92,8 +92,10 @@
 
 
 											 <div class="panel-heading">
-													<h4 class="panel-title"> <button type="submit" class="btn btn-default">Submit</button> </h4>
+													<h4 class="panel-title"> <button type="submit" class="btn btn-default" onclick="myFunction()">Submit</button> </h4>
                                     		</div>
+											
+											<input type="hidden" id="myID" name="json" value=""/>
 
                                         </form>
                                      </div>
@@ -165,6 +167,31 @@
 						    }
 						}
 						
+						
+							function myFunction()
+							{
+								var table = document.getElementById('editable-table');
+								var data = []; // first row needs to be headers var headers = []; 
+								var headers = [];
+								for(var i=0; i<table.rows[0].cells.length; i++) 
+								{
+									 headers[i] = table.rows[0].cells[i].innerHTML.toLowerCase().replace(/ /gi,''); 
+								} 
+								// go through cells 
+								for(var i=1; i<table.rows.length; i++) 
+								{ 
+									var tableRow = table.rows[i]; var rowData = {}; 
+									for(var j=0; j<tableRow.cells.length; j++) 
+									{ 
+										rowData[ headers[j] ] = tableRow.cells[j].innerHTML; 
+									} 
+									data.push(rowData); 
+								}
+								 
+								document.getElementById('myID').value = JSON.stringify(data);
+							}
+							
+							
 						</script>
 						
 						
